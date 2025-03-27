@@ -50,7 +50,7 @@ button {
     border-radius: 10px; 
     opacity: 0; 
     animation: fadeIn 2s forwards; 
-    position: relative; 
+    position: middle; 
     left: -40px; 
 }
 
