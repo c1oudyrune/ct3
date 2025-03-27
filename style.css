@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 100px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 2em;
+}
+
+section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    padding: 50px; 
+    background-color: #f09f9f;
+}
+
+img.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 20px 0; 
+}
+
+.text-area h1, .text-area h2 {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+
+textarea {
+    margin-top: 20px; 
+    padding: 20px; 
+    width: 600px; 
+    font-size: 1.5em; 
+}
+
+button {
+    margin-top: 80px; 
+    padding: 20px 40px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; 
+    opacity: 0; 
+    animation: fadeIn 2s forwards; 
+    position: relative; 
+    left: -40px; 
+}
+
+button.fade-in {
+    animation-delay: 0.5s; /
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    header, section {
+        padding: 40px; 
+    }
+
+    button {
+        left: 0; 
+    }
+}
