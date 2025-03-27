@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Мой Landing Page</title>
+</head>
+<body>
+    <section id="header">
+        <h1>Добро пожаловать!</h1>
+        <button class="fade-in" onclick="scrollToSection('about')">Узнать больше</button>
+    </section>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <img src="image1.jpg" alt="Описание изображения" class="responsive">
+        <button class="fade-in" onclick="scrollToSection('services')">Наши услуги</button>
+        
+        <div class="text-area">
+            <label for="userText">Обучаем людей любого возраста работе в Adobe приложениях.</label>
+            
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Наши Услуги</h2>
+        <img src="image2.png" alt="Описание изображения" class="responsive">
+        <button class="fade-in" onclick="scrollToSection('contact')">Связаться с нами</button>
+        
+        <div class="text-area">
+            <label for="userText">Обучение работы в Adobe Premier Pro и тд</label>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <img src="image3.jpg"  class="responsive">
+        <button class="fade-in" onclick="scrollToSection('header')">На главную</button>
+        
+        <div class="text-area">
+            <label for="userText">Контакты принимает в дискорде</label>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 </p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
